@@ -7,6 +7,11 @@ const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 const _data = [{
+    title: "pokémon bleu",
+    src: "https://i.pinimg.com/736x/23/4a/ab/234aabd910e7c3a52735fc6c6acc5e90.jpg",
+    video: "https://www.youtube.com/watch?v=s_4zaj8EbFI",
+    price: 1989
+}, {
     title: "alleyway",
     src: "https://image.konsolenkost.de/item/images/9005381/full/9005381-0.jpg",
     video: "https://www.youtube.com/watch?v=KxMEJm4hwZE&ab_channel=RetroArchives",
@@ -38,7 +43,7 @@ const _data = [{
     price: 1989
 }, {
     title: "shanghai",
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYqfzh6q2u5iOCDkP2rclaCCYYXw72tWkStuRadUiJafE8aRQv104uThwiu0ZdJajtWrk&usqp=CAU",
+    src: "https://cdn.mobygames.com/covers/5964073-shanghai-game-boy-front-cover.png",
     video: "https://www.youtube.com/watch?v=2q2z1hGWbfk&ab_channel=Reinc",
     price: 1989
 }, {

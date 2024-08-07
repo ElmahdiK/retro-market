@@ -1,110 +1,117 @@
-*{
-    border:0px;
-    padding:0px;
-    margin:0px;
-    font-family: 'Roboto Flex', sans-serif;
+* {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto Flex", sans-serif;
 }
 
-body{
-    background-color: #5f35aa;
+body {
+  background-color: #5f35aa;
 }
 
-header{
-    /*
+header {
+  /*
     background: rgb(17,10,129);
     background: linear-gradient(180deg, rgba(17,10,129,1) 0%, rgba(144,33,215,1) 35%, rgba(116,6,230,1) 100%);
 */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    /* margin:10px; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* margin:10px; */
 }
-header div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-header div input{
-    background-color: rgba(0,0,0,0.4);
-    padding: 20px;
-    margin: 10px;
-    width: 40%;
-    align-self: flex-end;
+header div input:focus {
+  outline: none;
 }
-header nav.menuH a{
-    color: #111;
+header div input {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #eee;
+  padding: 20px;
+  margin: 10px;
+  width: 40%;
+  align-self: flex-end;
 }
-header nav.menu{
-    background: rgba(0,0,0,0.4);
-    display: flex;
-    justify-content: center;
+header nav.menuH a {
+  color: #eee;
 }
-header nav a:hover{
-    background-color:rgba(0,0,0,0.4);
+header nav.menu {
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
 }
-header nav a.active{
-    background-color:rgba(0,0,0,0.4);
+header nav a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
 }
-header nav a{
-    vertical-align: middle;
-    text-align: center;
-    color: #eee;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 20px;
-    font-size: 14px;
-    display: inline-block;
+header nav a.active {
+  background-color: rgba(0, 0, 0, 0.4);
 }
-header p{
-    font-weight: bold;
-    font-size: 32px;
-    padding: 0px 20px;
+header nav a {
+  vertical-align: middle;
+  text-align: center;
+  color: #eee;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px;
+  font-size: 14px;
+  display: inline-block;
 }
-
-main{
-    display: flex;
-    align-items: center;
-}
-ul{
-    width: 100%;
-    margin:0 auto;
-    list-style:none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-ul li{
-    width:16.66%;
-}
-ul li div.div_product:hover{
-    background-color: #cbb8ee;
+header p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 32px;
+  padding: 0px 20px;
 }
 
-ul li div.div_product{
-    background-color: #fff;
-    box-shadow:0px 1px 4px #333;
-    margin:1px;
-    padding: 20px;
-    /* border-radius: 4px; */
-    transition: 0.2s;
-    cursor: pointer;
+main {
+  display: flex;
+  align-items: center;
 }
-ul li div.div_product img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+ul {
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
 }
-ul li div.div_product p{
-    padding: 20px;
+ul li {
+  width: 20%;
 }
-ul li div.div_product p:nth-child(2){
-    /* border-bottom: 1px solid #444; */
-    text-transform: capitalize;
-    font-size: 18px;
+ul li div.div_product:hover {
+  background-color: #cbb8ee;
 }
-ul li div.div_product p:nth-child(3){
-    color:darkred;
-    font-size: 16px;
-    text-align: right;
+
+ul li div.div_product {
+  background-color: #fff;
+  box-shadow: 0px 1px 4px #333;
+  margin: 1px;
+  padding: 20px;
+  /* border-radius: 4px; */
+  transition: 0.2s;
+  cursor: pointer;
+  height: calc(100% - 42px);
+}
+ul li div.div_product img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+}
+ul li div.div_product p {
+  padding: 20px;
+}
+ul li div.div_product p:nth-child(2) {
+  /* border-bottom: 1px solid #444; */
+  text-transform: capitalize;
+  font-size: 18px;
+}
+ul li div.div_product p:nth-child(3) {
+  color: darkred;
+  font-size: 16px;
+  text-align: right;
 }
